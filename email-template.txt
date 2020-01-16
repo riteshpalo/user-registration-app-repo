@@ -1,0 +1,7 @@
+ Hi ${NAME},<br>
+ Greetings for the day...!!<br>
+ You have been registered successfully with RPCL.<br>
+ click <a href="http://localhost:9999/unlockAccount?email=${EMAIL}">here</a> to unlock the account with the temporary password: ${PWD}.<br><br>
+ 
+ Thanks&regards,<br>
+ RPCL Team.  

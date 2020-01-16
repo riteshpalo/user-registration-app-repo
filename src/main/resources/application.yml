@@ -1,0 +1,47 @@
+server:
+  port: 9999
+  
+#datasource configuration
+spring:  datasource:    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:ritesh
+    username: ENV_DEV
+    password: ENV_DEV
+      
+#jpa properties    
+  jpa:
+    show-sql: true    hibernate:      ddl-auto: update
+    properties:      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+        format_sql: false    
+        
+        
+#ViewResolver configuration  mvc:    view:      prefix: /views/
+      suffix: .jsp
+
+#google SMTP properties
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: riteshpalo18@gmail.com
+    password: 31@Itriya
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+        auth: true
+        starttls.enable: true
+        ssl.trust: smtp.gmail.com        
+        
+#string literal configuration 
+app:
+  messages:
+    invalid-email: Invalid Email Id, Please Enter A Valid One
+    check-email-login: Check Your Email And Login With The Sent Password
+    account-locked: Your Account is Locked,Contact To Admin    
+    invalid-credentials: Invalid Credentials   
+    registration-almost-complete: Your Registration Almost Completed , Please Check Your Email To Unlock Your Account
+    registration-failed: Your Registration Faild
+    account-unlocked-success: Your Accout Has Been Unlocked Successfully , Please Continue With Login
+    accouont-unlocked-error: Your Accout Unlock Process Failed , Because Of Wrong Temporary Password
+          
+
+             

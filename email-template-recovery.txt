@@ -1,0 +1,8 @@
+ Hi ${NAME},<br>
+ Greetings for the day...!!<br>
+ Your Password is: ${PWD} .<br>
+ Please Login with this password<br><br>
+ click <a href="http://localhost:9999/">here</a> to Login to your account.<br><br>
+ 
+ Thanks&regards,<br>
+ RPCL Team.
